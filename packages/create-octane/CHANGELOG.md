@@ -1,5 +1,13 @@
 # create-octane
 
+## 0.0.26
+
+### Patch Changes
+
+- 9170304: `octane create --template data` (and `npm create octane -- --template data`, or `octane init --mode data`) scaffolds the `fullstack` app with `octane/data`: a reading list at `/books` that loads and adds books through a data worker. It writes the contracts (`src/books.data.ts`), their handler (`src/server/data.ts`), the module server function the store calls (`src/data.tsrx`), the data client the build makes the data worker from (`src/data.client.ts`, with `dataClient` in `vite.config.ts`), and the config's `data` module (`src/store.ts`), and installs `zod`. The server renders the list in a store per request and seeds the page with it; the browser's store, opened with `openDataStore` over the data worker, starts from that seed, so hydration loads nothing.
+- Updated dependencies [9170304]
+  - @octanejs/cli@0.4.0
+
 ## 0.0.25
 
 ### Patch Changes

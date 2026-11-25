@@ -1,5 +1,16 @@
 # @octanejs/zustand
 
+## 0.1.78
+
+### Patch Changes
+
+- Updated dependencies [19d6c6f]
+- Updated dependencies [5d2cfb1]
+- Updated dependencies [aa6d735]
+- Updated dependencies [31d39db]
+- Updated dependencies [aae666f]
+  - octane@0.25.0
+
 ## 0.1.77
 
 ### Patch Changes
